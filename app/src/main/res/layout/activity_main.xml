@@ -1,0 +1,82 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Check\nberat badan ideal anda"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Masukan tinggi anda"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/eberat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan berat anda"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hitung berat anda"
+            android:theme="@style/buttonstyle1"
+            />
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:text="Berat anda adalah" />
+        <Button
+            android:id="@+id/add_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SAVE DATA"
+            android:theme="@style/buttonstyle1"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Show data"
+            android:theme="@style/buttonstyle1"
+            />
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Exit"
+            android:theme="@style/buttonstyle1"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
